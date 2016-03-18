@@ -1,0 +1,48 @@
+{
+    "min_value": 0,
+    "max_value": 100,
+    "icon_id": 1,
+    "handlers": [
+        {
+            "device-type": "rgb-2-zone",
+            "zone": "two",
+            "mode": "color",
+            "color": [
+                {
+                    "low": 0,
+                    "high": 25,
+                    "color": {
+                        "red": 255,
+                        "green": 0,
+                        "blue": 0
+                    }
+                }, {
+                    "low": 36,
+                    "high": 74,
+                    "color": {
+                        "red": 0,
+                        "green": 0,
+                        "blue": 255
+                    }
+                }, {
+                    "low": 75,
+                    "high": 100,
+                    "color": {
+                        "red": 0,
+                        "green": 255,
+                        "blue": 0
+                    }
+                }
+            ],
+            "rate": {
+                "frequency": [
+                    {
+                        "low": 36,
+                        "high": 74,
+                        "frequency": 1
+                    }
+                ]
+            }
+        }
+    ]
+}
