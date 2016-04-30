@@ -1,5 +1,4 @@
 import requests
-import sys
 import time
 import json
 from xml.etree import ElementTree
@@ -7,13 +6,14 @@ from xml.etree import ElementTree
 gameName = "RES"
 eventName = "ASD"
 
-
 def start():
     with open("/Library/Application Support/SteelSeries Engine 3/coreProps.json", "r") as properties:
         engineServer = json.load(properties)['address']
 
-    jenkinsServer = sys.argv[1]
-    jenkinsProject = sys.argv[2]
+    with open("../json/properties.json", "r") as jsonFile:
+        properties = json.load(jsonFile)
+        jenkinsServer = properties['location']
+        jenkinsProject = properties['title']
 
     with open("../json/gameMetadata.json", "r") as jsonFile:
         game = json.load(jsonFile)

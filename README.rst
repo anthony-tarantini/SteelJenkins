@@ -8,5 +8,7 @@ SteelSeries mouse with your Jenkins CI.
 
 Usage:
 
+Setup json/properties.json file
+
 Navigate into src/ directory
-run python monitor.py {http://myjenkinsserver:8080/cc.xml} {myProjectName}
+run python monitor.py
