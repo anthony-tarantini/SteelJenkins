@@ -8,7 +8,13 @@ SteelSeries mouse with your Jenkins CI.
 
 Usage:
 
-Setup json/properties.json file
+Create this properties.json file in the json directory
+```
+{
+  "location": "http://localhost:8080/cc.xml",
+  "title": "My Test Build"
+}
+```
 
 Navigate into src/ directory
 run python monitor.py
